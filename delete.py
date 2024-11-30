@@ -24,7 +24,12 @@ def delete_contact(item):
             else:
                 updated_line.append(line)
 
-    
+    if not found:   
+        print(f"No match found for '{item}'.")
+
+    if found:
+        print(f"The record '{item}' has been successfully removed.")
+
     with open('contact.csv', 'w') as file:
         file.writelines(updated_line)
     
