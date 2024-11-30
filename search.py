@@ -8,7 +8,7 @@ def search_value(value):
             #value='we'
             found_lines=[]
             for index,line in enumerate(lines, start=1):
-                print(index,line)
+                #print(index,line)
                 if value in line:
                     found_lines.append([index,line.strip().split(',')])
             
