@@ -1,24 +1,27 @@
 
+from save import save_all
+
+def add_contact(all_contacts):
+    name=str(input("Enter Person Name  :"))
+    email=str(input("Enter Person E-Mail address  :"))
+    phone=int(input("Enter Person Mobile Number  :"))
+    address=str(input("Enter Person contact address   :"))
 
 
-def add_contact():
-    name=str(input("Enter Person Name"))
-    email=str(input("Enter Person E-Mail adress"))
-    phone=int(input("Enter Person Mobile Number"))
-    adress=str(input("Enter Person contact adress"))
-    dic={}
+    # take input and directly stores to dictionary
+    dic={
+        "Name":name,
+        "Email":email,
+        "phone":phone,
+        "adress":address}
+    all_contacts.append(dic)
+    save_all(all_contacts)
 
-    # dic={
-    #     "Name":name,
-    #     "Email":email,
-    #     "phone":phone,
-    #     "adress":adress}
-    dic["Name"]=name
-    dic["Email"]=email
-    dic["phone"]=phone
-    dic['adress']=adress
+    print('contacts added succesfully')
 
-    print(dic)
+    return all_contacts
+    
+ 
 
 
 

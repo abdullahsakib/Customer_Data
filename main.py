@@ -16,8 +16,9 @@ while True:
         print("Thanks for using Contact Book Management System ")
         break
     elif menu=="1":
-        pass
-        all_books=add_contact(all_books)
+        all_contacts=add_contact(all_contacts)
+        # pass
+        # all_books=add_contact(all_books)
     # elif menu=="2":
     #     view_all_books(all_books)
     # elif menu=="3":
