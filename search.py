@@ -11,9 +11,12 @@ def search_value(value):
                 #print(index,line)
                 if value in line:
                     found_lines.append([index,line.strip().split(',')])
-            
+                
             for line in found_lines:
                 print(f"Find in Line no-> {line[0]}, contact info:-> Name: {line[1][0]}, E-Mail: {line[1][1]},  Phone: {line[1][2]}, Address: {line[1][3]}")
+            
+            else:
+                print(f"{value} not found")
     
     except Exception as e:
         print(e)
